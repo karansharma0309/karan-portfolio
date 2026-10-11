@@ -1,0 +1,203 @@
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 1000px) {
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 25px;
+  }
+
+  .hero-image-wrap {
+    min-height: 520px;
+  }
+
+  .hero-image {
+    height: 510px;
+  }
+
+  .image-shape {
+    height: 430px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 780px) {
+
+  .header {
+    background: rgba(237, 242, 252, 0.97);
+  }
+
+  .nav {
+    min-height: 72px;
+  }
+
+  .brand {
+    width: 92px;
+  }
+
+  .brand img {
+    height: 50px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 6%;
+    width: 88%;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: 72px;
+  }
+
+  .hero-content {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    padding-top: 65px;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .social-links {
+    justify-content: center;
+  }
+
+  .hero-image-wrap {
+    min-height: 480px;
+    order: -1;
+  }
+
+  .hero-image {
+    height: 470px;
+    width: min(390px, 90%);
+  }
+
+  .image-shape {
+    right: 50%;
+    transform: translateX(50%) rotate(3deg);
+    height: 400px;
+    width: min(370px, 80%);
+  }
+
+  .about-grid,
+  .projects-grid,
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat:nth-child(2) {
+    border-right: 0;
+  }
+
+  .stat {
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .contact-box {
+    padding: 35px 25px;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+
+  .hero-info h1 {
+    font-size: 52px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .skills-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: auto;
+    padding: 28px 23px;
+  }
+
+  .project-card h3 {
+    font-size: 25px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat {
+    padding: 20px 8px;
+  }
+
+  .timeline {
+    padding-left: 25px;
+  }
+
+  .timeline-dot {
+    left: -35px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
